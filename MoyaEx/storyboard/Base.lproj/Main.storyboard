@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Acticles View Controller-->
+        <scene sceneID="DC1-It-RDq">
+            <objects>
+                <viewController id="bJK-or-ZcR" customClass="ActiclesViewController" customModule="MoyaEx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ay9-5W-Axm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_news" translatesAutoresizingMaskIntoConstraints="NO" id="ike-py-hMp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="hxU-tL-l0Z"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TO8-mz-XmU">
+                                <rect key="frame" x="0.0" y="278" width="375" height="389"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TYo-uz-OcX">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TYo-uz-OcX" id="EGo-hV-xLA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_news" translatesAutoresizingMaskIntoConstraints="NO" id="Xeu-vF-bxt">
+                                                    <rect key="frame" x="16" y="8" width="45" height="45.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="3Xx-a9-sFz"/>
+                                                        <constraint firstAttribute="width" constant="45" id="RqH-fD-Dl0"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Xeu-vF-bxt" firstAttribute="leading" secondItem="EGo-hV-xLA" secondAttribute="leading" constant="16" id="AOI-Oz-45D"/>
+                                                <constraint firstItem="Xeu-vF-bxt" firstAttribute="top" secondItem="EGo-hV-xLA" secondAttribute="top" constant="8" id="HQG-vR-3dh"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xeu-vF-bxt" secondAttribute="bottom" constant="8" id="HbZ-2F-0r0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ike-py-hMp" firstAttribute="top" secondItem="Jsa-C3-TPd" secondAttribute="top" id="26l-rq-rRi"/>
+                            <constraint firstItem="Jsa-C3-TPd" firstAttribute="bottom" secondItem="TO8-mz-XmU" secondAttribute="bottom" id="EBu-EH-03g"/>
+                            <constraint firstItem="TO8-mz-XmU" firstAttribute="leading" secondItem="Jsa-C3-TPd" secondAttribute="leading" id="RXJ-M4-bKp"/>
+                            <constraint firstItem="ike-py-hMp" firstAttribute="leading" secondItem="Jsa-C3-TPd" secondAttribute="leading" id="cZo-v6-Hh1"/>
+                            <constraint firstItem="Jsa-C3-TPd" firstAttribute="trailing" secondItem="TO8-mz-XmU" secondAttribute="trailing" id="gq9-aM-CiY"/>
+                            <constraint firstItem="TO8-mz-XmU" firstAttribute="top" secondItem="ike-py-hMp" secondAttribute="bottom" constant="8" id="mOc-z4-dhH"/>
+                            <constraint firstItem="ike-py-hMp" firstAttribute="trailing" secondItem="Jsa-C3-TPd" secondAttribute="trailing" id="qum-4T-lV2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jsa-C3-TPd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Her-jY-VEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="72"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NewsViewController" customModule="MoyaEx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UINavigationBar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Bl-gI-3I0" userLabel="newsTableView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCellIdentifier" id="jfe-za-aaf" customClass="NewsTableViewCell" customModule="MoyaEx" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jfe-za-aaf" id="6Td-oD-Hyj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleAspectFit" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="a5x-h1-VjL">
+                                                    <rect key="frame" x="16" y="8" width="343" height="27.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_news" translatesAutoresizingMaskIntoConstraints="NO" id="rhL-Uk-p3g">
+                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="27.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="45" id="ZWU-TL-6LD"/>
+                                                                <constraint firstAttribute="height" constant="45" id="dJr-zN-cFs"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrD-sw-bBE">
+                                                            <rect key="frame" x="61" y="0.0" width="282" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="a5x-h1-VjL" secondAttribute="trailing" constant="16" id="7Vj-7z-wCZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="a5x-h1-VjL" secondAttribute="bottom" constant="8" id="P14-Oo-k95"/>
+                                                <constraint firstItem="a5x-h1-VjL" firstAttribute="top" secondItem="6Td-oD-Hyj" secondAttribute="top" constant="8" id="SxI-x2-hP3"/>
+                                                <constraint firstItem="a5x-h1-VjL" firstAttribute="leading" secondItem="6Td-oD-Hyj" secondAttribute="leading" constant="16" id="hcz-hQ-pyR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsTitleLable" destination="LrD-sw-bBE" id="HYb-pW-aOH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Bl-gI-3I0" secondAttribute="bottom" id="RIc-F7-5rv"/>
+                            <constraint firstItem="0Bl-gI-3I0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TCL-0h-Rqn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Bl-gI-3I0" secondAttribute="trailing" id="Uwc-W9-Ih0"/>
+                            <constraint firstItem="0Bl-gI-3I0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ozQ-fH-YLD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="newsTableVIew" destination="0Bl-gI-3I0" id="x41-uH-uNs"/>
+                        <segue destination="bJK-or-ZcR" kind="show" id="52k-Uj-duy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_news" width="512" height="512"/>
+    </resources>
+</document>
